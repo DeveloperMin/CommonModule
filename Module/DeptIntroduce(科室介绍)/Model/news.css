@@ -1,0 +1,11 @@
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align:center;
+}
+
+.time {
+    font-size: 15px;
+    color: #555;
+	text-align:center;
+}

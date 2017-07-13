@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>我的关注</string>
+		<key>range</key>
+		<string>my_doctor</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>医生圈</string>
+		<key>range</key>
+		<string>doctor</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>病友圈</string>
+		<key>range</key>
+		<string>patient</string>
+	</dict>
+</array>
+</plist>

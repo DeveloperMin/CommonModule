@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>subtitle</key>
+        <string>Code</string>
+        <key>title</key>
+        <string>医疗服务编号</string>
+    </dict>
+    <dict>
+        <key>subtitle</key>
+        <string>ServiceName</string>
+        <key>title</key>
+        <string>项目名称</string>
+    </dict>
+    <dict>
+        <key>subtitle</key>
+        <string>Until</string>
+        <key>title</key>
+        <string>计价单位</string>
+    </dict>
+    <dict>
+        <key>subtitle</key>
+        <string>Prices</string>
+        <key>title</key>
+        <string>价格(元)</string>
+    </dict>
+    <dict>
+        <key>subtitle</key>
+        <string>ServiceBody</string>
+        <key>title</key>
+        <string>项目内涵</string>
+    </dict>
+    <dict>
+        <key>subtitle</key>
+        <string>ServiceContent</string>
+        <key>title</key>
+        <string>除外内容</string>
+    </dict>
+    <dict>
+        <key>subtitle</key>
+        <string>Note</string>
+        <key>title</key>
+        <string>说明</string>
+    </dict>
+</array>
+</plist>

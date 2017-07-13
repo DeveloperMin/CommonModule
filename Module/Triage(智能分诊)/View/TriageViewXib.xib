@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iIY-TK-oD9" customClass="TriageView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnu-fP-k6J">
+                    <rect key="frame" x="5" y="19" width="310" height="442"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triage.bundle/body_male_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="uqj-lm-RCp">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="442"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EE-jq-KA5">
+                            <rect key="frame" x="66" y="16" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="avc-Jm-8xN"/>
+                                <constraint firstAttribute="height" constant="30" id="tOu-uf-cX5"/>
+                            </constraints>
+                            <state key="normal" title="转身">
+                                <color key="titleColor" red="0.45882352941176469" green="0.74901960784313726" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="turnArround:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Trw-hT-WeM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3A-vu-f7G">
+                            <rect key="frame" x="0.0" y="138" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Y3A-vu-f7G" secondAttribute="height" multiplier="130:56" id="nQ2-ry-wGf"/>
+                            </constraints>
+                            <state key="normal" title="上肢">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="jpB-W2-u6t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fx-W0-75G">
+                            <rect key="frame" x="4" y="270" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="8Fx-W0-75G" secondAttribute="height" multiplier="130:56" id="X6g-Kc-M0z"/>
+                            </constraints>
+                            <state key="normal" title="下肢">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Y8v-Aj-xDD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqX-UV-yE8">
+                            <rect key="frame" x="210" y="27" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="EqX-UV-yE8" secondAttribute="height" multiplier="130:56" id="bTP-gx-wnA"/>
+                            </constraints>
+                            <state key="normal" title="头">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="headButtonClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="BCe-Av-Cby"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZV-Ru-PgR">
+                            <rect key="frame" x="226" y="93" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zZV-Ru-PgR" secondAttribute="height" multiplier="130:56" id="K9g-H1-URQ"/>
+                            </constraints>
+                            <state key="normal" title="胸">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="oEH-eC-rdZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJO-1e-Hpd">
+                            <rect key="frame" x="226" y="169" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pJO-1e-Hpd" secondAttribute="height" multiplier="130:56" id="wgP-dZ-VZV"/>
+                            </constraints>
+                            <state key="normal" title="腹">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Tnl-4Y-JAu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5y-A4-72N">
+                            <rect key="frame" x="226" y="271" width="83" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="V5y-A4-72N" secondAttribute="height" multiplier="158:56" id="hDG-uL-TN7"/>
+                            </constraints>
+                            <state key="normal" title="男性生殖">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="HRh-MM-Jox"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eP-kw-71x">
+                            <rect key="frame" x="15" y="68" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6eP-kw-71x" secondAttribute="height" multiplier="130:56" id="gdU-He-FBy"/>
+                            </constraints>
+                            <state key="normal" title="颈">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="wtS-xV-wPp"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJA-IN-m9f">
+                            <rect key="frame" x="1" y="138" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="SJA-IN-m9f" secondAttribute="height" multiplier="65:28" id="QgB-0S-imC"/>
+                            </constraints>
+                            <state key="normal" title="全身">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="WQQ-9m-ctz"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-Of-pOa">
+                            <rect key="frame" x="240" y="41" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qXr-Of-pOa" secondAttribute="height" multiplier="65:28" id="f7e-2d-7EJ"/>
+                            </constraints>
+                            <state key="normal" title="背部">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="i7s-52-cxO"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGy-dn-Gt0">
+                            <rect key="frame" x="214" y="119" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nGy-dn-Gt0" secondAttribute="height" multiplier="65:28" id="weK-fA-cGa"/>
+                            </constraints>
+                            <state key="normal" title="骨">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="osY-Fu-Fp0"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIw-gn-Zg8">
+                            <rect key="frame" x="240" y="185" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ZIw-gn-Zg8" secondAttribute="height" multiplier="65:28" id="UkC-Y3-XF2"/>
+                            </constraints>
+                            <state key="normal" title="腰">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Fel-2d-yUU"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljY-iO-MhY">
+                            <rect key="frame" x="238" y="280" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ljY-iO-MhY" secondAttribute="height" multiplier="65:28" id="xNP-zL-XEN"/>
+                            </constraints>
+                            <state key="normal" title="臀">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="BEB-ur-SyT"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-bB-0SV">
+                            <rect key="frame" x="1" y="279" width="68" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="eKV-bB-0SV" secondAttribute="height" multiplier="65:28" id="wSl-kV-qcE"/>
+                            </constraints>
+                            <state key="normal" title="盆腔">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="pz0-3o-gBD"/>
+                            </connections>
+                        </button>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYH-Dr-Gsb" userLabel="headPartView">
+                            <rect key="frame" x="135" y="15" width="155" height="62"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3b-g0-s58">
+                                    <rect key="frame" x="6" y="3" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="height" multiplier="1:1" id="j9n-EA-PJs"/>
+                                    </constraints>
+                                    <state key="normal" title="头">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Aye-lE-mV5"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5D-gz-JfM">
+                                    <rect key="frame" x="37" y="3" width="25" height="25"/>
+                                    <state key="normal" title="脑">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="7Cw-WP-ttb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaj-lq-MDP">
+                                    <rect key="frame" x="68" y="3" width="25" height="25"/>
+                                    <state key="normal" title="眼">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Syf-CR-RrC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArD-VB-zm1">
+                                    <rect key="frame" x="99" y="3" width="50" height="25"/>
+                                    <state key="normal" title="咽喉">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="G5b-nS-3Re"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b83-5K-zgX">
+                                    <rect key="frame" x="6" y="34" width="25" height="25"/>
+                                    <state key="normal" title="鼻">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="qHM-QB-3OL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdM-zJ-a52">
+                                    <rect key="frame" x="37" y="34" width="25" height="25"/>
+                                    <state key="normal" title="耳">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Wf1-fF-5m7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt7-GX-cjZ">
+                                    <rect key="frame" x="68" y="34" width="25" height="25"/>
+                                    <state key="normal" title="口">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="ahh-fr-KTZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWb-Ov-JAB">
+                                    <rect key="frame" x="99" y="34" width="50" height="25"/>
+                                    <state key="normal" title="面部">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bodyPartClick:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Phr-F0-V9A"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.45882352941176469" green="0.74901960784313726" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="b83-5K-zgX" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="1eX-dk-uaD"/>
+                                <constraint firstItem="ArD-VB-zm1" firstAttribute="top" secondItem="i3b-g0-s58" secondAttribute="top" id="2aT-ee-IR4"/>
+                                <constraint firstItem="DWb-Ov-JAB" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="2iq-XE-sbD"/>
+                                <constraint firstItem="Tt7-GX-cjZ" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" id="43k-JG-aXe"/>
+                                <constraint firstItem="i3b-g0-s58" firstAttribute="centerY" secondItem="iYH-Dr-Gsb" secondAttribute="centerY" multiplier="0.5" id="540-LD-pmU"/>
+                                <constraint firstItem="ArD-VB-zm1" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="6PG-rm-eUT"/>
+                                <constraint firstItem="SdM-zJ-a52" firstAttribute="leading" secondItem="x5D-gz-JfM" secondAttribute="leading" id="7nz-jD-1er"/>
+                                <constraint firstItem="Eaj-lq-MDP" firstAttribute="top" secondItem="i3b-g0-s58" secondAttribute="top" id="7rQ-iI-vCW"/>
+                                <constraint firstItem="Eaj-lq-MDP" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" id="8xm-oN-5zg"/>
+                                <constraint firstItem="b83-5K-zgX" firstAttribute="centerY" secondItem="iYH-Dr-Gsb" secondAttribute="centerY" multiplier="1.5" id="C6Z-WK-Bcd"/>
+                                <constraint firstItem="DWb-Ov-JAB" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" multiplier="2" id="Cjs-qx-jdH"/>
+                                <constraint firstItem="b83-5K-zgX" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" id="E3F-cm-4eh"/>
+                                <constraint firstItem="b83-5K-zgX" firstAttribute="leading" secondItem="i3b-g0-s58" secondAttribute="leading" id="Etx-gk-e0E"/>
+                                <constraint firstItem="x5D-gz-JfM" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" id="FkH-xW-98G"/>
+                                <constraint firstItem="x5D-gz-JfM" firstAttribute="centerX" secondItem="iYH-Dr-Gsb" secondAttribute="trailing" multiplier="0.32" id="GE3-Lh-8rQ"/>
+                                <constraint firstItem="SdM-zJ-a52" firstAttribute="top" secondItem="b83-5K-zgX" secondAttribute="top" id="GXx-oQ-l8i"/>
+                                <constraint firstItem="x5D-gz-JfM" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="HL8-Wx-W5T"/>
+                                <constraint firstItem="Eaj-lq-MDP" firstAttribute="centerX" secondItem="iYH-Dr-Gsb" secondAttribute="trailing" multiplier="0.52" id="IXI-3c-7aJ"/>
+                                <constraint firstItem="i3b-g0-s58" firstAttribute="centerX" secondItem="iYH-Dr-Gsb" secondAttribute="trailing" multiplier="0.12" id="Iu3-Tw-pB4"/>
+                                <constraint firstItem="ArD-VB-zm1" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" multiplier="2" id="Lxe-YI-sQP"/>
+                                <constraint firstItem="Tt7-GX-cjZ" firstAttribute="leading" secondItem="Eaj-lq-MDP" secondAttribute="leading" id="Muj-Ud-fNr"/>
+                                <constraint firstItem="SdM-zJ-a52" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="N8n-qk-mxj"/>
+                                <constraint firstItem="x5D-gz-JfM" firstAttribute="top" secondItem="i3b-g0-s58" secondAttribute="top" id="Rb4-kX-4DV"/>
+                                <constraint firstItem="Tt7-GX-cjZ" firstAttribute="top" secondItem="b83-5K-zgX" secondAttribute="top" id="TSa-CS-qXZ"/>
+                                <constraint firstItem="i3b-g0-s58" firstAttribute="height" secondItem="iYH-Dr-Gsb" secondAttribute="height" multiplier="0.4" id="Tte-Ig-fJf"/>
+                                <constraint firstAttribute="width" secondItem="iYH-Dr-Gsb" secondAttribute="height" multiplier="5:2" id="YBu-1O-J53"/>
+                                <constraint firstItem="DWb-Ov-JAB" firstAttribute="top" secondItem="b83-5K-zgX" secondAttribute="top" id="fQa-y6-xq7"/>
+                                <constraint firstItem="ArD-VB-zm1" firstAttribute="centerX" secondItem="iYH-Dr-Gsb" secondAttribute="trailing" multiplier="0.8" id="sqb-hH-aLc"/>
+                                <constraint firstItem="Tt7-GX-cjZ" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="u0X-jN-tTa"/>
+                                <constraint firstItem="SdM-zJ-a52" firstAttribute="width" secondItem="i3b-g0-s58" secondAttribute="width" id="xkB-s4-Im0"/>
+                                <constraint firstItem="ArD-VB-zm1" firstAttribute="leading" secondItem="DWb-Ov-JAB" secondAttribute="leading" id="zDR-JW-lXV"/>
+                                <constraint firstItem="Eaj-lq-MDP" firstAttribute="height" secondItem="i3b-g0-s58" secondAttribute="height" id="zmH-pL-fBy"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJE-YF-PdG">
+                            <rect key="frame" x="8" y="16" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="7Mt-FL-BUK"/>
+                                <constraint firstAttribute="width" constant="50" id="Mo9-i6-2OP"/>
+                            </constraints>
+                            <state key="normal" image="Triage.bundle/man.png"/>
+                            <connections>
+                                <action selector="gender:" destination="iIY-TK-oD9" eventType="touchUpInside" id="Y6e-lw-bWe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SJA-IN-m9f" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.0033" id="1aD-hQ-yMy"/>
+                        <constraint firstItem="ZIw-gn-Zg8" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.2203" id="3Eo-bY-bwL"/>
+                        <constraint firstItem="8Fx-W0-75G" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2203" id="4bS-lj-fvM"/>
+                        <constraint firstAttribute="bottom" secondItem="uqj-lm-RCp" secondAttribute="bottom" id="6op-3o-hvW"/>
+                        <constraint firstItem="uqj-lm-RCp" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="top" id="79l-wu-nvH"/>
+                        <constraint firstItem="EqX-UV-yE8" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.0619" id="8SE-Hi-fsP"/>
+                        <constraint firstItem="ljY-iO-MhY" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.2203" id="BTh-Cd-acq"/>
+                        <constraint firstAttribute="trailing" secondItem="uqj-lm-RCp" secondAttribute="trailing" id="Ctp-CU-5Pm"/>
+                        <constraint firstItem="6eP-kw-71x" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.0475" id="DSQ-2m-a8o"/>
+                        <constraint firstItem="nGy-dn-Gt0" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.269" id="FFt-Zp-XGG"/>
+                        <constraint firstAttribute="trailing" secondItem="iYH-Dr-Gsb" secondAttribute="trailing" constant="20" id="FjC-3N-Cop"/>
+                        <constraint firstItem="uqj-lm-RCp" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="leading" id="FpY-SQ-DEz"/>
+                        <constraint firstItem="8Fx-W0-75G" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.6119" id="GsX-14-0Eb"/>
+                        <constraint firstItem="BJE-YF-PdG" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="leading" constant="8" id="HY2-gq-wr6"/>
+                        <constraint firstItem="eKV-bB-0SV" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.2203" id="JcW-Wp-00A"/>
+                        <constraint firstItem="iYH-Dr-Gsb" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.5" id="KXY-Ij-0dx"/>
+                        <constraint firstItem="pJO-1e-Hpd" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.3821" id="MAf-dy-XyV"/>
+                        <constraint firstItem="qXr-Of-pOa" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.0917" id="Nct-Is-Iuv"/>
+                        <constraint firstItem="V5y-A4-72N" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2678" id="PKU-1X-c51"/>
+                        <constraint firstItem="SJA-IN-m9f" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.2203" id="QH8-Pr-PHi"/>
+                        <constraint firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="height" multiplier="590:840" id="R9B-R5-8aN"/>
+                        <constraint firstItem="Y3A-vu-f7G" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="leading" id="T5J-LE-mMX"/>
+                        <constraint firstItem="eKV-bB-0SV" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.0033" id="Tbd-YI-WSW"/>
+                        <constraint firstItem="8Fx-W0-75G" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.0119" id="TiO-yR-q0o"/>
+                        <constraint firstItem="nGy-dn-Gt0" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.6898" id="YOM-rS-gzI"/>
+                        <constraint firstItem="EqX-UV-yE8" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2203" id="ZQH-9t-tau"/>
+                        <constraint firstItem="qXr-Of-pOa" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.2203" id="atJ-MZ-Oxz"/>
+                        <constraint firstItem="ljY-iO-MhY" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.7678" id="bfr-99-agZ"/>
+                        <constraint firstItem="zZV-Ru-PgR" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2203" id="dcB-Le-k1p"/>
+                        <constraint firstItem="eKV-bB-0SV" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.631" id="edg-we-6Ss"/>
+                        <constraint firstItem="ZIw-gn-Zg8" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.419" id="emo-CE-vJq"/>
+                        <constraint firstItem="3EE-jq-KA5" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="top" constant="16" id="fmX-kz-bRf"/>
+                        <constraint firstItem="ZIw-gn-Zg8" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.7729" id="hfl-mL-ovL"/>
+                        <constraint firstItem="Y3A-vu-f7G" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.3131" id="i5s-kg-7lR"/>
+                        <constraint firstItem="6eP-kw-71x" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.1536" id="ige-UL-nNh"/>
+                        <constraint firstItem="BJE-YF-PdG" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="top" constant="16" id="l4V-Yh-1TK"/>
+                        <constraint firstItem="pJO-1e-Hpd" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2203" id="lDu-YB-tra"/>
+                        <constraint firstItem="6eP-kw-71x" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2203" id="oyt-7e-xHe"/>
+                        <constraint firstItem="EqX-UV-yE8" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.6763" id="p49-pr-YQH"/>
+                        <constraint firstItem="zZV-Ru-PgR" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.2107" id="pRF-dJ-tfD"/>
+                        <constraint firstItem="SJA-IN-m9f" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.3131" id="rf9-Bb-MEg"/>
+                        <constraint firstItem="3EE-jq-KA5" firstAttribute="leading" secondItem="BJE-YF-PdG" secondAttribute="trailing" constant="8" id="rpe-Nd-fLX"/>
+                        <constraint firstItem="pJO-1e-Hpd" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.7305" id="t00-BL-sbV"/>
+                        <constraint firstItem="qXr-Of-pOa" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.7729" id="t2d-5f-ZjR"/>
+                        <constraint firstItem="Y3A-vu-f7G" firstAttribute="width" secondItem="uqj-lm-RCp" secondAttribute="width" multiplier="0.2203" id="tOS-h9-l3d"/>
+                        <constraint firstItem="V5y-A4-72N" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.6143" id="vOZ-cm-3Le"/>
+                        <constraint firstItem="ljY-iO-MhY" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="bottom" multiplier="0.6345" id="vWn-N4-76J"/>
+                        <constraint firstItem="zZV-Ru-PgR" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.7305" id="vqP-mh-xZu"/>
+                        <constraint firstItem="nGy-dn-Gt0" firstAttribute="width" secondItem="gnu-fP-k6J" secondAttribute="width" multiplier="0.2203" id="xM0-F0-D4o"/>
+                        <constraint firstItem="V5y-A4-72N" firstAttribute="leading" secondItem="gnu-fP-k6J" secondAttribute="trailing" multiplier="0.7305" id="yuc-qa-F34"/>
+                        <constraint firstItem="iYH-Dr-Gsb" firstAttribute="top" secondItem="gnu-fP-k6J" secondAttribute="top" constant="15" id="zKi-3u-b4J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gnu-fP-k6J" firstAttribute="leading" secondItem="iIY-TK-oD9" secondAttribute="leading" constant="5" id="66A-Oo-Wad"/>
+                <constraint firstAttribute="trailing" secondItem="gnu-fP-k6J" secondAttribute="trailing" constant="5" id="BkO-tl-JhU"/>
+                <constraint firstItem="gnu-fP-k6J" firstAttribute="centerY" secondItem="iIY-TK-oD9" secondAttribute="centerY" id="U1h-IG-gnN"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bodyImageView" destination="uqj-lm-RCp" id="RGX-fk-TJM"/>
+                <outlet property="genderBtn" destination="BJE-YF-PdG" id="XH6-WH-xMn"/>
+                <outlet property="headPartView" destination="iYH-Dr-Gsb" id="FgT-4m-YiC"/>
+                <outlet property="reproductionBtn" destination="V5y-A4-72N" id="grh-Zx-VJT"/>
+                <outlet property="turnBtn" destination="3EE-jq-KA5" id="Cnu-CW-vqR"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="255"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Triage.bundle/body_male_front.png" width="590" height="840"/>
+        <image name="Triage.bundle/man.png" width="590" height="840"/>
+    </resources>
+</document>
